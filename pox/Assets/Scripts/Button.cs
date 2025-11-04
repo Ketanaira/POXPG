@@ -4,13 +4,13 @@ using UnityEngine;
 ***/
 public class Button : MonoBehaviour
 {
-    public bool btn;
+    public bool pressed;
     public BoxCollider2D collider;
-    public Animator anim;
     public void Start()
     {
         collider = GetComponent<BoxCollider2D>();
-        anim = GetComponent<Animator>();
+    
+        
     }
     void Update()
     {
@@ -19,16 +19,13 @@ public class Button : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        btn = true;
-        
+        pressed = true;
 
-            anim.SetTrigger("open");
-        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        btn = false;
+        pressed = false;
     }
 
 

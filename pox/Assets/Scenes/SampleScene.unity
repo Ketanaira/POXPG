@@ -155,9 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86a5e191b9bc0b48a5370b200ef3cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn: 0
+  pressed: 0
   collider: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!114 &304576509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9838b1c923364cc4b9770d8c11a24a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn: {fileID: 304576508}
+  anim: {fileID: 0}
+  btn: {fileID: 890858784}
 --- !u!61 &304576510
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -409,7 +409,6 @@ GameObject:
   - component: {fileID: 890858781}
   - component: {fileID: 890858784}
   - component: {fileID: 890858785}
-  - component: {fileID: 890858786}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -541,9 +540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86a5e191b9bc0b48a5370b200ef3cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn: 0
+  pressed: 0
   collider: {fileID: 890858781}
-  anim: {fileID: 890858786}
 --- !u!61 &890858785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -589,27 +587,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.90507317, y: 0.94067043}
   m_EdgeRadius: 0
---- !u!95 &890858786
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890858780}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: de0059cbe82bf044e9f5d087f0a4a520, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1254269665
 GameObject:
   m_ObjectHideFlags: 0
